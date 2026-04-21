@@ -153,32 +153,18 @@ h1 {
 }
 
 .hero-card {
-  background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 87%, #fff), var(--surface));
+  margin: 0;
   border: 1px solid var(--border);
   border-radius: 1rem;
-  padding: 1.4rem 1.2rem;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--surface) 60%, transparent);
 }
 
-.hero-card h2 {
-  margin-top: 0;
-  font-size: 1.1rem;
-}
-
-.hero-card ul {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.55rem;
-  list-style: none;
-}
-
-.hero-card li {
-  border: 1px solid var(--border);
-  border-radius: 0.6rem;
-  padding: 0.55rem 0.65rem;
-  text-align: center;
-  color: var(--muted);
+.hero-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .section {
@@ -244,6 +230,22 @@ h2 {
   grid-template-columns: 1.15fr 1fr;
 }
 
+.demo-copy p {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.demo-copy ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.demo-copy li + li {
+  margin-top: 0.35rem;
+}
+
 .resource-list {
   display: grid;
   gap: 0.85rem;
@@ -271,6 +273,13 @@ h2 {
   border-radius: 0.85rem;
   padding: 1rem;
   background: linear-gradient(165deg, color-mix(in srgb, var(--surface) 80%, #1c2f66), var(--surface));
+}
+
+.callout img {
+  display: block;
+  width: 100%;
+  border-radius: 0.6rem;
+  margin-bottom: 0.85rem;
 }
 
 .callout h3 {
